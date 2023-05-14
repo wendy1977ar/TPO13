@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: white;
+    color: #393A36;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.contenedor{
+    display: grid;
+
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    /* gap: 10px; */
+    /* si no quiero poner margenes entre cada elemento, lo pongo aca general */
+    grid-gap: 10px;
+    grid-template-areas: 
+    "encabezado1 encabezado2"
+    "quienes quienes"
+    "viajes1 viajes2"
+    "experiencias1 experiencias2"
+    "footer footer";
+
+}
+
+.contenedor .encabezado1 {
+    background: white;
+    grid-area: encabezado1;
+}
+
+
+.contenedor .encabezado2 .nav{
+    background-color: grey;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    margin: 10px 0;
+    border-radius: 5px;
+    grid-area: encabezado2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-content: space-between; */
+    gap: 10 px 10 px;
+    max-width: 200px;
+    
+
+
+}
+
+
+.quienes{
+    background-image: url("imagenes/playa")
+
+}
+.contenedor .quienes{
+    grid-area: quienes;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+    
+
+}
+
+.contenedor .viajes1{
+    background: pink;
+    grid-area: viajes1;
+}
+
+.contenedor .viajes2{
+    background: rgb(226, 147, 160);
+    grid-area: viajes2;
+}
+.contenedor .footer{
+    background: lightblue;
+    grid-area: footer;
+
+}
+
+
+
+
+@media screen and (max-width: 768px){
+  
+
+    .contenedor{
+        grid-template-areas: 
+        "encabezado1"
+        "encabezado2"
+    
+        "quienes"
+        "viajes1"
+        "viajes2"
+        "experiencias1"
+        "experiencias2"
+        "footer"
+        ;
+    }
+    .contenedor .encabezado2 .nav{
+        /* necesitamos centrar esto */
+    display: inline-flex;
+    margin: 0;
+    }
+
+
+}
