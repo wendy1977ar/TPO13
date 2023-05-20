@@ -13,6 +13,27 @@
 <script src="https://kit.fontawesome.com/3b4db05c36.js" crossorigin="anonymous"></script>
 
     <title>Turistearte</title>
+
+    <script>
+function enviarFormulario(event) {
+
+  // Obtener los valores de los campos del formulario
+  var nombre = document.getElementById("nombre").value;
+  var email = document.getElementById("email").value;
+  var viajo = document.getElementById("viajo").value;
+  var mensaje = document.getElementById("mensaje").value;
+
+  // Validar los campos del formulario
+  if (nombre === "" || email === "" || mensaje === "") {
+    alert("Por favor, completá todos los campos del formulario.");
+    return;
+  }
+
+  alert("¡Formulario enviado exitosamente! Pronto te responderemos");
+
+}
+
+    </script>
 </head>
 
 
@@ -57,7 +78,7 @@
             </div>
             <div>
                 <label for="viajo">Estoy interesad@ en un viaje con:</label>
-                <select id="asunto" required>
+                <select id="viajo" required>
                   <option value="Solo">Viajo solo</option>
                   <option value="Amig@s">Viajo con Amig@s</option>
                   <option value="Pareja">Viajo en pareja</option>
