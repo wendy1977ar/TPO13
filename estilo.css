@@ -54,14 +54,18 @@ body{
     grid-area: encabezado2;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
+    justify-content: flex-end;
     /* align-content: space-between; */
     gap: 10 px 10 px;
     max-width: 200px;
-    transition:all .5s ease-in-out
-    
+    /* transition:all .5s ease-in-out */
+}
 
 
+
+.contenedor .encabezado2 .nav:hover {
+    background-color: #D3D57C;
 }
 
 
@@ -91,7 +95,7 @@ background-position: 0 70%;
     line-height: 2.7rem;
     color: #fff;
     margin: 10% 20%;
-    text-shadow: 0 4px 4px rgba(0,0,0,.25);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.6);
     text-align: center;
     font-weight: 600;
 }
