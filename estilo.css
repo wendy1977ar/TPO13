@@ -1,7 +1,16 @@
+:root {font-size: 16px;}
+
 *{
     margin: 0;
     padding: 0;
 }
+
+/* Paleta de colores
+gris oscuro #393A36
+celeste #BAD7F2
+amarillo #EDE7B1
+rosa #F9B9C3
+verde #D3D57C */
 
 body{
     background: white;
@@ -49,16 +58,49 @@ body{
     /* align-content: space-between; */
     gap: 10 px 10 px;
     max-width: 200px;
+    transition:all .5s ease-in-out
     
 
 
 }
 
 
+
 .quienes{
-    background-image: url("imagenes/playa")
+    background-image: url("imagenes/playa.jpg")
 
 }
+.quienes {
+background-position: 0 70%;
+}
+
+.quienes {
+    background-size: cover;
+    min-height: 50vh;
+    position: relative;
+    color: white;
+    display: flex;
+    -ms-flex-align: center;
+    /* ver que es  */
+    align-items: center;
+    
+}
+
+.quienes-texto{
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+    color: #fff;
+    margin: 10% 20%;
+    text-shadow: 0 4px 4px rgba(0,0,0,.25);
+    text-align: center;
+    font-weight: 600;
+}
+
+
+
+
+
+
 .contenedor .quienes{
     grid-area: quienes;
     text-align: center;
@@ -72,17 +114,73 @@ body{
 .contenedor .viajes1{
     background: pink;
     grid-area: viajes1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .contenedor .viajes2{
     background: rgb(226, 147, 160);
     grid-area: viajes2;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+h6 {
+font-style: oblique;
+}
+
+#experiencia-titulo {
+    background-color: rgb(255, 255, 255);
+    line-height: 1.2;
+    font-weight: 600;
+    font-size: 3 em;
+    margin-left: 5px;
+}
+    
+
+
+#experiencia-detalle {
+background-color: rgb(244, 209, 215);
+margin-left: 5px;
+}
+
 .contenedor .footer{
     background: lightblue;
     grid-area: footer;
+    display: flex;
+    min-height: 10vh;
+    /* justify-content: space-evenly; */
+justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
 
 }
+.contenedor .footer .social-media {
+  margin-left: 20px;
+}
+
+.contenedor .footer .social-media > a:link, a:visited, a:active {
+    text-decoration: none !important;
+    color: #393A36;
+    font-size: 2rem;
+   }
+
+/* a:link, a:visited, a:active {
+    text-decoration: none !important;
+    color: #393A36;
+    font-size: 3rem;
+
+} */
 
 
 
@@ -108,6 +206,9 @@ body{
     display: inline-flex;
     margin: 0;
     }
-
+    
+    #experiencia-titulo {
+        font-size: 1.7 em;
+    }
 
 }
