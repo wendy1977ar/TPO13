@@ -45,43 +45,35 @@
         
 
         </div>
-        <div class="viajes1">
-          <h1>Destinos Nacionales</h1> 
-        </div>
 
-        <div class="viajes2">
-            <h1>Destinos Internacionales</h1>
-        </div>
-
-        <div class="experiencias1">
-            <div id="experiencia-titulo">
-                Luciana Jason. 21 años. España.
+        <form id="formulario" onsubmit="enviarFormulario(event)">
+            <div>
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" required>
             </div>
-            <div id="experiencia-detalle">
-                <h4>Cataratas del Iguazú</h4>
-                Excelente lugar para conocer y recrear el contacto con la naturaleza . Se puede respirar aire puro y descansar con tranquilidad. Lugar seguro para disfrutar en familia.
-                <h6>abril 2023</h6>
-
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" id="email" required>
             </div>
+            <div>
+                <label for="viajo">Estoy interesad@ en un viaje con:</label>
+                <select id="asunto" required>
+                  <option value="Solo">Viajo solo</option>
+                  <option value="Amig@s">Viajo con Amig@s</option>
+                  <option value="Pareja">Viajo en pareja</option>
+                  <option value="Familia">Viajo en familia</option>
+                </select>
+              </div>
+              <div>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" required></textarea>
+              </div>
+              <button type="submit">Enviar</button>
+            </form>
 
-        </div>
+         
+          
 
-        <div class="experiencias2">
-
-            <div id="experiencia-titulo">
-                José López. 33 años. Argentina.
-            </div>
-            <div id="experiencia-detalle">
-<h4>San Martín de los Andes por la Ruta de los 7 lagos</h4>
-Una belleza dinámica.
-Paisajes de mil colores y diseños.
-Cada lago con su peculiaridad y encanto.
-Ruta para tomar medio día, y hacerla desde la mañana, preferentemente con sol
-<h6>Mayo 2023</h6>
-
-
-            </div>
-        </div>
 
         <div class="footer">
 
@@ -101,7 +93,10 @@ Ruta para tomar medio día, y hacerla desde la mañana, preferentemente con sol
                 </div>
 
         </div>
-   
+
+
+
+    </body>
 
 
 
