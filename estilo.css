@@ -66,6 +66,7 @@ body{
 
 .contenedor .encabezado2 .nav:hover {
     background-color: #D3D57C;
+    /* poner que no agrande onclick */
 }
 
 
@@ -216,3 +217,40 @@ justify-content: center;
     }
 
 }
+
+
+#formulario {
+    /* max-width: 400px; */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+  }
+  
+  #formulario label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  #formulario input[type="text"],
+  #formulario input[type="email"],
+  #formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #formulario button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #F9B9C3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #formulario button[type="submit"]:hover {
+    background-color: #393A36;
+  }
