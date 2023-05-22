@@ -31,7 +31,7 @@ body{
     grid-template-areas: 
     "encabezado1 encabezado2"
     "quienes quienes"
-    "viajes1 viajes2"
+    "viajes1 viajes1"
     "experiencias experiencias"
     "formulario formulario"
     "footer footer";
@@ -43,6 +43,7 @@ body{
     background: white;
     grid-area: encabezado1;
     size: 20vw;
+
 }
 
 .encabezado1 img {
@@ -69,7 +70,6 @@ body{
     /* align-content: space-between; */
     gap: 10 px 10 px;
     max-width: 200px;
-    
 }
 
 
@@ -136,6 +136,21 @@ background-position: 0 70%;
     align-items: center;
     justify-content: center;
     
+}
+
+.contenedor .viajes1{
+   
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    padding: 10px;
+    }
+
+h4{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #393A36;
 }
 
 .contenedor .viajes2{
@@ -233,12 +248,11 @@ a:link, a:visited, a:active {
 
 
 #formulario {
-    max-width: 500px;
+    max-width: 400px;
     margin: auto;
     margin-bottom: 20px;
     padding: 20px;
     background-color: #EDE7B1;
-    border-radius: 15px;
     grid-area: formulario;
 
   }
@@ -313,7 +327,7 @@ a:link, a:visited, a:active {
         "encabezado2"
         "quienes"
         "viajes1"
-        "viajes2"
+        /* "viajes2" */
         "experiencias"
         "experiencias1"
         "experiencias2"
