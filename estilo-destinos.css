@@ -195,15 +195,34 @@ font-style: oblique;
     font-style: oblique;
     font-weight: 300;
 
-
-
-
 }
 
 .nombre {
     margin-left: 5px;
 }
     
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout:fixed
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #b31da6;
+    color: white;
+  }
+
+tr:hover {background-color: rgb(230, 70, 182);}
 
 
 #experiencia-detalle {
@@ -277,8 +296,8 @@ a:link, a:visited, a:active {
   
   #formulario select {
     font-size: 1rem;
-    margin top: 10;
-    margin bottom: 20;
+    margin-top: 10;
+    margin-bottom: 20;
     padding-bottom: 20;
     border: 1px solid #F9B9C3;
     color: #393A36;
