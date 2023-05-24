@@ -21,7 +21,6 @@ body{
 
 .contenedor{
     display: grid;
-
     width: 90%;
     max-width: 1000px;
     margin: auto;
@@ -30,10 +29,10 @@ body{
     grid-gap: 10px;
     grid-template-areas: 
     "encabezado1 encabezado2"
+    "ubicacion formulario"
     "quienes quienes"
     "viajes1 viajes2"
     "experiencias experiencias"
-    "formulario formulario"
     "footer footer";
 
 }
@@ -82,8 +81,6 @@ body{
 
 
 
-
-
 .quienes{
     background-image: url("imagenes/playa.jpg")
 
@@ -117,16 +114,11 @@ background-position: 0 70%;
 
 
 
-
-
 .contenedor .quienes{
     grid-area: quienes;
     text-align: center;
     display: flex;
     align-items: center;
-
-    
-
 }
 
 .contenedor .viajes1{
@@ -167,7 +159,7 @@ font-style: oblique;
 #experiencia-titulo {
     line-height: 1.2;
     font-weight: 600;
-    font-size: 3 em;
+    font-size: 3;
     margin-left: 5px;
     /* padding-bottom: 10px; */
     padding: 10px;
@@ -180,9 +172,6 @@ font-style: oblique;
     font-style: oblique;
     font-weight: 300;
 
-
-
-
 }
 
 .nombre {
@@ -192,8 +181,7 @@ font-style: oblique;
 
 
 #experiencia-detalle {
-background-color: #f4f5b0
-;
+background-color: #f4f5b0;
 margin-left: 5px;
 margin-right: 5px;
 margin-bottom: 5px;
@@ -201,6 +189,17 @@ text-align: left;
 border-radius: 15px;
 padding: 10px;
 }
+
+.botonContacto {
+    display: flex;
+    border-radius: 30%;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 5%;
+    right: 14%;
+    text-align: center;
+  }
 
 .contenedor .footer{
     background: lightblue;
@@ -234,12 +233,13 @@ a:link, a:visited, a:active {
 
 #formulario {
     max-width: 500px;
-    margin: auto;
-    margin-bottom: 20px;
+    margin: right;
+    height: 68%;
+    margin-bottom: 10px;
     padding: 20px;
     background-color: #EDE7B1;
     border-radius: 15px;
-    grid-area: formulario;
+    grid-area: formulario; 
 
   }
   
@@ -263,8 +263,8 @@ a:link, a:visited, a:active {
   
   #formulario select {
     font-size: 1rem;
-    margin top: 10;
-    margin bottom: 20;
+    margin-top: 10;
+    margin-bottom: 20;
     padding-bottom: 20;
     border: 1px solid #F9B9C3;
     color: #393A36;
@@ -325,6 +325,7 @@ a:link, a:visited, a:active {
     .contenedor .encabezado2 .nav{
     display: inline-flex;
     margin: 0;
+
     }
     
     #experiencia-titulo {

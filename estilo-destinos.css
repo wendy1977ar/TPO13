@@ -21,7 +21,6 @@ body{
 
 .contenedor{
     display: grid;
-
     width: 90%;
     max-width: 1000px;
     margin: auto;
@@ -236,6 +235,17 @@ border-radius: 15px;
 padding: 10px;
 }
 
+.botonContacto {
+    display: flex;
+    border-radius: 30%;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 5%;
+    right: 14%;
+    text-align: center;
+  }
+
 .contenedor .footer{
     background: lightblue;
     grid-area: footer;
@@ -319,7 +329,7 @@ a:link, a:visited, a:active {
 
 
 
-     @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
     .contenedor {
         width: 90%;
@@ -328,13 +338,12 @@ a:link, a:visited, a:active {
         gap: 10px;
       }
 
-.encabezado1 img {
-    max-width: 100%;
-    height: auto;
-  }
+    .encabezado1 img {
+        max-width: 100%;
+        height: auto;
+    }
 
-
-  }
+}
 
 
 
@@ -413,18 +422,15 @@ a:link, a:visited, a:active {
         "experiencias"
         "experiencias1"
         "experiencias2"
-        "footer"
+        "footer";
         font-size: 1.5 em;
     }
 
+    .quienes {
+        min-height: 20vh;
+    
+    }
 
-.quienes {
-    min-height: 20vh;
-   
-}
-
-
-      
     .contenedor .encabezado2 .nav{
     display: inline-flex;
     margin: 0;
