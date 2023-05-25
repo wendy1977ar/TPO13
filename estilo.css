@@ -194,7 +194,7 @@ border-radius: 15px;
 padding: 10px;
 }
 
-.botonContacto {
+.contenedor .botonContacto {
     display: flex;
     border-radius: 30%;
     width: 50px;
