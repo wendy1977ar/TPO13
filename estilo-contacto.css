@@ -29,8 +29,7 @@ body{
     grid-gap: 10px;
     grid-template-areas: 
     "encabezado1 encabezado2"
-    "formulario formulario"
-    "donde donde"
+    "formulario donde"
     "footer footer";
 
 }
@@ -162,18 +161,15 @@ margin-bottom: 10px;
 
 
 
-
-
 .contenedor .donde {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+    /* width: 100%; */
     background: pink;
     grid-area: donde;
     padding: 20px;
     border-radius: 15px;
     text-align: left;
 }
+
 
 
 
@@ -230,7 +226,6 @@ font-style: oblique;
     grid-area: footer;
     display: flex;
     min-height: 10vh;
-    /* justify-content: space-evenly; */
     justify-content: center;
     align-items: center;
     border-radius: 10px;
@@ -250,7 +245,6 @@ font-style: oblique;
 a:link, a:visited, a:active {
     text-decoration: none !important;
     color: #393A36;
-    /* scale: 1; */
 
 }
 
@@ -278,7 +272,6 @@ a:link, a:visited, a:active {
   #formulario input[type="email"],
   #formulario textarea {
     width: 100%;
-    /* padding: 10px; */
     margin-bottom: 10px;
     border: 1px solid #F9B9C3;
     border-radius: 4px;
@@ -330,8 +323,12 @@ a:link, a:visited, a:active {
   
 
     .contenedor{
-        /* grid-template-areas:  */
-      
+        grid-template-areas: 
+        "encabezado1" 
+        "encabezado2"
+        "formulario" 
+        "donde"
+        "footer";
         ;
     }
 
