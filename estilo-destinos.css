@@ -34,6 +34,7 @@ body{
     "encabezado1 encabezado2"
     "quienes quienes"
     "viajes1 viajes1"
+    "carrousel carrousel"
     "experiencias experiencias"
     "formulario formulario"
     "footer footer";
@@ -412,7 +413,7 @@ a:link, a:visited, a:active {
         "encabezado2"
         "quienes"
         "viajes1"
-        /* "viajes2" */
+        "carrousel"
         "experiencias"
         "experiencias1"
         "experiencias2"
@@ -440,6 +441,7 @@ a:link, a:visited, a:active {
         "encabezado1 encabezado2"
         "quienes quienes"
         "viajes1 viajes1"
+        "carrousel carrousel"
         "experiencias experiencias"
         "formulario formulario"
         "footer footer";
@@ -474,6 +476,7 @@ a:link, a:visited, a:active {
         "encabezado2"
         "quienes"
         "viajes1"
+        "carrousel"
         "experiencias"
         "experiencias1"
         "experiencias2"
