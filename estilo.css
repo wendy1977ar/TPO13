@@ -50,23 +50,22 @@ body{
 
   }
 
+.contenedor .encabezado2{
+    max-width: 100%;
+    margin-left: inherit;
+    grid-area: encabezado2;
+}
 
 .contenedor .encabezado2 .nav{
     background-color: grey;
     color: white;
-    text-decoration: none;
     text-align: center;
     padding: 5px;
     margin: 10px 0;
-    margin-right: 0;
     border-radius: 5px;
-    grid-area: encabezado2;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    justify-content: flex-end;
-    /* align-content: space-between; */
-    gap: 10 px 10 px;
+    justify-content: right;
     max-width: 200px;
     
 }
@@ -86,7 +85,7 @@ body{
 
 }
 .quienes {
-background-position: 0 70%;
+    background-position: 0 70%;
 }
 
 .quienes {
