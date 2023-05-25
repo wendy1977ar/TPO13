@@ -175,12 +175,12 @@ font-style: oblique;
     display: flex;
     grid-area: experiencias;
 }
-#experiencia-titulo {
+.experiencia .titulo {
     line-height: 1.2;
     font-weight: 600;
     font-size: 3;
     margin-left: 5px;
-    /* padding-bottom: 10px; */
+    /*padding-bottom: 10px; */
     padding: 10px;
     /* background-color: #EDE7B1; */
     border-radius: 5px;
@@ -226,7 +226,7 @@ padding: 10px;
     display: flex;
     min-height: 10vh;
     /* justify-content: space-evenly; */
-justify-content: center;
+    justify-content: center;
     align-items: center;
     border-radius: 10px;
 
