@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+<!-- <link rel="icon" href="imagenes/fav-08.png" type="image/x-icon"> -->
+<link rel="shortcut icon" href="imagenes/favicon-08.svg" type="image/x-icon">
+<script src="https://kit.fontawesome.com/3b4db05c36.js" crossorigin="anonymous"></script>
+
+    <title>Turistearte</title>
+
+    <script>
+
+function enviarFormulario(event) {
+
+  // Obtener los valores de los campos del formulario
+  var nombre = document.getElementById("nombre").value;
+  var email = document.getElementById("email").value;
+  var viajo = document.getElementById("viajo").value;
+  var mensaje = document.getElementById("mensaje").value;
+
+  // Validar los campos del formulario
+  if (nombre === "" || email === "" || mensaje === "") {
+    alert("Por favor, completá todos los campos del formulario.");
+    return;
+  }
+
+  alert("¡Formulario enviado exitosamente! Pronto te responderemos");
+
+}
+
+    </script>
+</head>
+
+
+<body>
+   <div class="contenedor">
+    <div class="encabezado1">
+      <a href="index.html"><img src="imagenes/logo-01.png" alt="logo Turistearte"></a>
+    </div>
+        <div class="encabezado2">
+          <nav>
+          
+
+        
+    
+            <a class="nav" href="index.html">Inicio</a> 
+            <a class="nav" href="nacionales.html">Destinos Nacionales</a>
+            <a class="nav" href="internacionales.html">Destinos Internacionales</a> 
+            <a class="nav" href="contacto.html">Contacto</a> 
+
+
+
+            </nav>
+        </div>
+
+        <!-- <div class="quienes">
+            <div class="quienes-texto">
+        Pensamos en tu próximo viaje
+            </div>
+
+        
+
+        </div> -->
+            
+        <form id="formulario" onsubmit="enviarFormulario(event)">
+          <h2><strong>Consultas</strong></h2>
+            <div>
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" required>
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" id="email" required>
+            </div>
+            <div>
+                <label for="viajo">Estoy interesad@ en un viaje con:</label>
+                <select id="viajo" required>
+                  <option value="Solo">Viajo solo</option>
+                  <option value="Amig@s">Viajo con Amig@s</option>
+                  <option value="Pareja">Viajo en pareja</option>
+                  <option value="Familia">Viajo en familia</option>
+                </select>
+              </div>
+              <div>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" required></textarea>
+              </div>
+              <button type="submit">Enviar</button>
+            </form>
+
+         <!--Donde estamos-->
+         <section>
+          <div class="contenedor">
+           <div class="ubicacion"></div>               
+                 <div>
+                   <h2><br>Donde estamos</h2><ul class="setTable"></ul>
+                   <ul>Oficina central en <strong>Callao 1136 - CABA (Argetnina)</strong></ul>
+                   <ul>
+                     <li>Atención <strong>Lunes a Viernes de 10 a 16hs.</strong></li>
+                     <li>Teléfono <strong>(011) 4444 3333</strong></li>
+
+           <div class="mapouter"><div class="gmap_canvas"><iframe width="820" height="560" id="gmap_canvas" src="https://maps.google.com/maps?q=callao+1136+caba+argentina&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://online.stopwatch-timer.net/"></a><br><style>.mapouter{position: relative;text-align: right;height: 560px;width: 820px;}</style><a href="https://www.embedmaps.co">embed google maps api</a><style>.gmap_canvas{overflow: hidden;background: none !important;height: 420px;width: 680px;}</style></div></div>
+             </section>
+                   </ul>
+               
+            
+          
+
+
+        <div class="footer">
+
+                <div class="social-media">
+                <a href="https://twitter.com/" target="blank" class="logo"><i class="fab fa-twitter"></i></a> 
+                </div>
+
+                <div class="social-media">
+                <a href="https://www.facebook.com" target="blank" class="logo"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+
+                <div class="social-media">
+                <a href="https://youtube.com/" target="blank" class="logo"><i class="fab fa-youtube"></i></a>
+                </div>
+
+                <div class="social-media"><a href="https://instagram.com/" target="blank" class="logo"><i class="fab fa-instagram"></i></a>
+                </div>
+
+        </div>
+
+
+
+    </body>
+
+
+
+
+
+        </div>
+   </div> 
+
+</body>
+</html>
