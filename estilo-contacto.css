@@ -1,0 +1,352 @@
+:root {font-size: 16px;}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Paleta de colores
+gris oscuro #393A36
+celeste #BAD7F2
+amarillo #EDE7B1
+rosa #F9B9C3
+verde #D3D57C */
+
+body{
+    background: white;
+    color: #393A36;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.contenedor{
+    display: grid;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    /* gap: 10px; */
+    /* si no quiero poner margenes entre cada elemento, lo pongo aca general */
+    grid-gap: 10px;
+    grid-template-areas: 
+    "encabezado1 encabezado2"
+    "formulario formulario"
+    "donde donde"
+    "footer footer";
+
+}
+
+.contenedor .encabezado1 {
+    background: white;
+    grid-area: encabezado1;
+    size: 20vw;
+}
+
+.encabezado1 img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.contenedor .encabezado2{
+    max-width: 100%;
+    margin-left: inherit;
+    grid-area: encabezado2;
+}
+
+.contenedor .encabezado2 .nav{
+    background-color: grey;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    margin: 10px 0;
+    margin-right: 0;
+    border-radius: 5px;
+    grid-area: encabezado2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: flex-end;
+    /* align-content: space-between; */
+    gap: 10 px 10 px;
+    max-width: 200px;
+}
+
+
+
+.contenedor .encabezado2 .nav:hover {
+    background-color: #D3D57C;
+    transform: scale(1);
+    /* poner que no agrande onclick */
+}
+
+
+/* 
+.formulario {
+    background-color: #EDE7B1;
+    max-width: 500px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    grid-area: formulario;
+  
+} */
+
+
+.contenedor .formulario {
+    max-width: 100%;
+    margin: right;
+    /* margin-bottom: 10px; */
+    padding: 20px;
+    background-color: #EDE7B1;
+    border-radius: 15px;
+    grid-area: formulario; 
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin: 0 auto;
+    /* max-width: 500px;  */
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+
+
+
+#formulario label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  
+  #formulario input[type="text"],
+  #formulario input[type="email"],
+  #formulario textarea {
+    width: 100%;
+    /* padding: 10px; */
+    margin-bottom: 10px;
+    border: 1px solid #F9B9C3;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  #formulario select {
+    font-size: 1rem;
+    margin-top: 10;
+    margin-bottom: 20;
+    padding-bottom: 20;
+    border: 1px solid #F9B9C3;
+    color: #393A36;
+    
+  
+  }
+  #formulario button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #393A36;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #formulario button[type="submit"]:hover {
+    background-color: #393A36;
+}
+
+
+
+
+
+
+
+.contenedor .donde {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    background: pink;
+    grid-area: donde;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: left;
+}
+
+
+
+
+.contenedor .donde h1,
+.contenedor .donde h4 {
+    display: block;
+}
+
+.contenedor .donde h1 {
+text-align: left;
+}
+
+.contenedor .donde h4 {
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.contenedor .mapa{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+
+
+
+
+h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+h6 {
+font-style: oblique;
+}
+
+
+.contenedor .botonContacto {
+    display: flex;
+    border-radius: 30%;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 10px;
+    right: 14%;
+    text-align: center;
+  }
+
+.contenedor .footer{
+    background: lightblue;
+    grid-area: footer;
+    display: flex;
+    min-height: 10vh;
+    /* justify-content: space-evenly; */
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+
+}
+.contenedor .footer .social-media {
+  margin-left: 20px;
+  font-size: 2rem;
+}
+
+.contenedor .footer .social-media > a:link, a:visited, a:active {
+    text-decoration: none !important;
+    color: #393A36;
+   }
+
+a:link, a:visited, a:active {
+    text-decoration: none !important;
+    color: #393A36;
+    /* scale: 1; */
+
+}
+
+
+#formulario {
+    max-width: 500px;
+    margin: right;
+    height: 68%;
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: #EDE7B1;
+    border-radius: 15px;
+    grid-area: formulario; 
+
+  }
+  
+  #formulario label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  
+  #formulario input[type="text"],
+  #formulario input[type="email"],
+  #formulario textarea {
+    width: 100%;
+    /* padding: 10px; */
+    margin-bottom: 10px;
+    border: 1px solid #F9B9C3;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  #formulario select {
+    font-size: 1rem;
+    margin-top: 10;
+    margin-bottom: 20;
+    padding-bottom: 20;
+    border: 1px solid #F9B9C3;
+    color: #393A36;
+    
+  
+  }
+  #formulario button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #393A36;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #formulario button[type="submit"]:hover {
+    background-color: #393A36;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    .contenedor {
+        width: 90%;
+        max-width: 1000px;
+        margin: auto;
+        gap: 10px;
+      }
+
+    .encabezado1 img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+  
+
+    .contenedor{
+        /* grid-template-areas:  */
+      
+        ;
+    }
+
+      
+    .contenedor .encabezado2 .nav{
+    display: inline-flex;
+    margin: 0;
+
+    }
+    
+    #experiencia-titulo {
+        font-size: 1.7 em;
+        margin-bottom: 15px;
+    }
+
+}
+
+
