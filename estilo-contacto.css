@@ -345,5 +345,13 @@ a:link, a:visited, a:active {
     }
 
 }
+@media screen and (min-width: 1280px) and (max-width: 1920px) and (orientation: landscape) {
+    .contenedor {
+        width: 90%;
+        max-width: 1400px;
+        margin: auto;
+        gap: 20px;
+      }
 
+}
 
